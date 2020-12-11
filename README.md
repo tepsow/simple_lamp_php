@@ -19,5 +19,8 @@ http://localhost:6789/
 ```
 docker container run --rm -it --name dcv --mount type=bind,source="$(pwd)",destination=/input pmsipilot/docker-compose-viz
 ```
+**Grafical reresentation png**
+![Grafical reresentation png](https://github.com/tepsow/simple_lamp_php/blob/main/docker-compose.png)
+
 #More about grafical representation
 https://github.com/pmsipilot/docker-compose-viz
