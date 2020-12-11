@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  web-server:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    networks:
+      - backend
+      - frontend  
+    restart: always
+    volumes:
+      - "./html/:/var/www/html/"
+    ports:
+      - "6789:80"
+  mysql-server:
+    image: mysql:8.0.19
+    restart: always
+    networks:
+      - backend
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+networks:
+  frontend:
+  backend:  
