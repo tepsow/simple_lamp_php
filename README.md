@@ -1,5 +1,5 @@
 # simple_lamp_php
-Lab 8  lampp: PHP:7.4.3 (backend) + Apache(backend+frontend) + MySQL (backend) + ./html/index.php (<?php phpinfo(); ?>)
+Lab 8  lampp: PHP:7.4.3 (backend) + Apache(backend+frontend) + MySQL (backend) 
 
 
 ***#Clone repository:***
